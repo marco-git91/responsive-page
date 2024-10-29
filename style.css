@@ -1,0 +1,186 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+p {
+  color: #999;
+}
+h3 {
+  color: #6b6b6b;
+}
+#menu {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+header h3 {
+  font-size: 2em;
+}
+header img {
+  border-radius: 50%;
+  margin: 15px;
+}
+.nav-bar {
+  margin: 30px;
+}
+a {
+  color: #131313;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 20px;
+}
+.about h3 {
+  font-size: 4em;
+}
+.office,
+.team-img-box,
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.office-img-1,
+.office-img-2,
+.office-img-3 {
+  width: 360px;
+  padding: 20px;
+}
+.team h3 {
+  font-size: 25px;
+}
+footer {
+  width: 100%;
+  background-color: #282828;
+  color: #777;
+  margin: 0 auto;
+}
+i {
+  padding: 5px;
+}
+.team-img-box,
+.about,
+.team,
+footer {
+  text-align: center;
+}
+.card-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.footer-card {
+  color: white;
+  background-color: rgb(37, 149, 240);
+  width: 80vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer-card a button {
+  justify-content: end;
+  align-self: center;
+  padding: 10px;
+  float: right;
+  border-radius: 5%;
+  border: transparent;
+}
+.footer-card img {
+  height: 100px;
+  width: 100px;
+}
+@media all and (max-width: 768px) {
+  .container,
+  .footer-contact,
+  .office,
+  .team-img-box,
+  .media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    font-size: small;
+  }
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  .office img {
+    width: 350px;
+  }
+  #menu {
+    display: inline-flex;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .media,
+  .footer-contact {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .container,
+  .office {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .office-img-1,
+  .office-img-2,
+  .office-img-3 {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 20px;
+  }
+  .office img {
+    height: 200px;
+    width: 200px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  #menu {
+    display: flex;
+  }
+  .about,
+  .team,
+  header {
+    width: 90vw;
+    align-items: center;
+  }
+  .team-img-box {
+    width: 80vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 5px;
+  }
+}
